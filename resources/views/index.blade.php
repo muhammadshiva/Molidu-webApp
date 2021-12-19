@@ -37,7 +37,7 @@
               <a class="nav-link" href="/">Beranda</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Tentang Kami</a>
+              <a class="nav-link" href="/#about">Tentang Kami</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Layanan</a>
@@ -77,12 +77,13 @@
     <div class="container">
       <div class="row align-items-center">
         <div class="col-lg-6 py-3 wow fadeInUp">
-          <span class="subhead">Tentang Kami</span>
-          <h2 class="title-section">Mobile Learning And Education</h2>
-          <div class="divider"></div>
-          <p>Molidu merupakan sebuah platform pembelajaran online yang menyediakan solusi untuk guru dan murid dalam proses kegiatan belajar mengajar secara efektif, efisien, dan terstruktur.</p>
-          <p>melalui platform Molidu, kegiatan pembelajaran secara daring seperti absensi, pengerjaan tugas oleh siswa, pemberian materi oleh guru dapat lebih mudah dilakukan. </p>
-          <a href="about.html" class="btn btn-primary mt-3">Read More</a>
+          <span class="subhead" id="#about">Tentang Kami</span>
+            @foreach ($abouts as $about)
+                <h2 class="title-section">{{$about->title}}</h2>
+                <div class="divider"></div>
+                {!! $about->description !!}
+            @endforeach
+
         </div>
         <div class="col-lg-6 py-3 wow fadeInRight">
           <div class="img-fluid py-3 text-center">
@@ -104,22 +105,12 @@
             <p>Mari kita jelaskan untukmu!</p>
 
             <ul class="theme-list theme-list-light text-white">
+              @foreach ($fiturs as $fitur)
               <li>
-                <div class="h5">Gemar Membaca</div>
-                <p>Melalui Fitur Gemar Membaca siswa akan mendapatkan reward berupa dana digital setelah siswa membaca buku kemudian menulis rangkuman yang ditugaskan Guru.</p>
+                <div class="h5">{{ $fitur->fitur }}</div>
+                <p>{{ $fitur->description }}</p>
               </li>
-              <li>
-                <div class="h5">Fitur Chatting</div>
-                <p>Dengan fitur chatting, akan memudahkan para siswa untuk berkomunikasi ke sesama siswa maupun guru dalam grup yang sama.</p>
-              </li>
-              <li>
-                <div class="h5">Terintegrasi Video Conference</div>
-                <p>Tidak perlu buka zoom lagi, karena Molidu telah menyediakan fitur video conference yang bisa langsung digunakan pada aplikasi ini.</p>
-              </li>
-              <li>
-                <div class="h5">Harga Bersahabat</div>
-                <p>1 kali bayar untuk semua layanan. Molidu merupakan layanan B2B,  kami memanfaatkan fitur premium untuk Sekolah dengan biaya yang lebih murah dan terjangkau.</p>
-              </li>
+              @endforeach
             </ul>
           </div>
           <div class="col-lg-6 py-3 wow fadeInRight">
@@ -140,78 +131,31 @@
         <div class="divider mx-auto"></div>
       </div>
       <div class="row mt-5">
+        @foreach ($prices as $price)
 
         <div class="col-lg-4 py-3 wow zoomIn">
             <div class="card-pricing marked">
-              <div class="header">
+                <div class="header">
                 <div class="pricing-type">Mulai Dari</div>
                 <div class="price">
-                  <span class="dollar">Rp</span>
-                  <h1>199<span class="suffix">.999</span></h1>
+                    <span class="dollar">Rp</span>
+                    <h1>{{$price->price}}</h1>
                 </div>
                 <h5>Per Month</h5>
-              </div>
-              <div class="body">
-                <p>25 Analytics <span class="suffix">Campaign</span></p>
-                <p>1,300 Change <span class="suffix">Keywords</span></p>
-                <p>Social Media <span class="suffix">Reviews</span></p>
-                <p>1 Free <span class="suffix">Optimization</span></p>
-                <p>24/7 <span class="suffix">Support</span></p>
-              </div>
-              <div class="footer">
-                <a href="#" class="btn btn-pricing btn-block">Subscribe</a>
-              </div>
-            </div>
-          </div>
-
-         <div class="col-lg-4 py-3 wow zoomIn">
-            <div class="card-pricing marked">
-              <div class="header">
-                <div class="pricing-type">Mulai Dari</div>
-                <div class="price">
-                  <span class="dollar">Rp</span>
-                  <h1>199<span class="suffix">.999</span></h1>
                 </div>
-                <h5>Per Month</h5>
-              </div>
-              <div class="body">
-                <p>25 Analytics <span class="suffix">Campaign</span></p>
-                <p>1,300 Change <span class="suffix">Keywords</span></p>
-                <p>Social Media <span class="suffix">Reviews</span></p>
-                <p>1 Free <span class="suffix">Optimization</span></p>
-                <p>24/7 <span class="suffix">Support</span></p>
-              </div>
-              <div class="footer">
-                <a href="#" class="btn btn-pricing btn-block">Subscribe</a>
-              </div>
-            </div>
-          </div>
-
-
-        <div class="col-lg-4 py-3 wow zoomIn">
-            <div class="card-pricing marked">
-              <div class="header">
-                <div class="pricing-type">Mulai Dari</div>
-                <div class="price">
-                  <span class="dollar">Rp</span>
-                  <h1>199<span class="suffix">.999</span></h1>
+                <div class="body">
+                    {!! $price->item !!}
                 </div>
-                <h5>Per Month</h5>
-              </div>
-              <div class="body">
-                <p>25 Analytics <span class="suffix">Campaign</span></p>
-                <p>1,300 Change <span class="suffix">Keywords</span></p>
-                <p>Social Media <span class="suffix">Reviews</span></p>
-                <p>1 Free <span class="suffix">Optimization</span></p>
-                <p>24/7 <span class="suffix">Support</span></p>
-              </div>
-              <div class="footer">
+                <div class="footer">
                 <a href="#" class="btn btn-pricing btn-block">Subscribe</a>
-              </div>
+                </div>
             </div>
-          </div>
+        </div>
+        @endforeach
+
 
       </div>
+
     </div> <!-- .container -->
   </div> <!-- .page-section -->
 

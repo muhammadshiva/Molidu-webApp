@@ -11,9 +11,13 @@
 |
 */
 
-Route::get('/', function () {
-    return view('index');
-});
+use App\Http\Controllers\HomeController;
+// use Illuminate\Routing\Route;
+
+// Route::get('/', function () {
+//     return view('index');
+// });
+
 
 Route::get('/about', function () {
     return view('about');
@@ -33,4 +37,4 @@ Route::get('/classification', function () {
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/', [HomeController::class, 'index']);

@@ -2,6 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Abouts;
+use App\Fiturs;
+use App\Prices;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -23,6 +26,10 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+        $abouts = Abouts::all();
+        $fiturs = Fiturs::all();
+        $prices = Prices::all();
+
+        return view('index', ['abouts' => $abouts, 'fiturs' => $fiturs, 'prices' => $prices]);
     }
 }
