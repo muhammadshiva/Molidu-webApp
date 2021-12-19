@@ -99,18 +99,26 @@
       <div class="container">
         <div class="row align-items-center">
           <div class="col-lg-6 py-3 pr-lg-5 wow fadeInUp">
-            <h2 class="title-section">Bagaimana Molidu Dapat <br> Meningkatkan Efisiensi Belajar ?</h2>
+            <h2 class="title-section">Kenapa Menggunakan Molidu ?</h2>
             <div class="divider"></div>
-            <p>We're an experienced and talented team of passionate consultants who breathe with search engine marketing.</p>
+            <p>Mari kita jelaskan untukmu!</p>
 
             <ul class="theme-list theme-list-light text-white">
               <li>
-                <div class="h5">Lorem</div>
-                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor</p>
+                <div class="h5">Gemar Membaca</div>
+                <p>Melalui Fitur Gemar Membaca siswa akan mendapatkan reward berupa dana digital setelah siswa membaca buku kemudian menulis rangkuman yang ditugaskan Guru.</p>
               </li>
               <li>
-                <div class="h5">Lorem</div>
-                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor</p>
+                <div class="h5">Fitur Chatting</div>
+                <p>Dengan fitur chatting, akan memudahkan para siswa untuk berkomunikasi ke sesama siswa maupun guru dalam grup yang sama.</p>
+              </li>
+              <li>
+                <div class="h5">Terintegrasi Video Conference</div>
+                <p>Tidak perlu buka zoom lagi, karena Molidu telah menyediakan fitur video conference yang bisa langsung digunakan pada aplikasi ini.</p>
+              </li>
+              <li>
+                <div class="h5">Harga Bersahabat</div>
+                <p>1 kali bayar untuk semua layanan. Molidu merupakan layanan B2B,  kami memanfaatkan fitur premium untuk Sekolah dengan biaya yang lebih murah dan terjangkau.</p>
               </li>
             </ul>
           </div>
@@ -134,17 +142,35 @@
       <div class="row mt-5">
 
         <div class="col-lg-4 py-3 wow zoomIn">
-
-        </div>
-
-
-        <div class="col-lg-4 py-3 wow zoomIn">
             <div class="card-pricing marked">
               <div class="header">
-                <div class="pricing-type">Start From</div>
+                <div class="pricing-type">Mulai Dari</div>
                 <div class="price">
-                  <span class="dollar">$</span>
-                  <h1>19<span class="suffix">.99</span></h1>
+                  <span class="dollar">Rp</span>
+                  <h1>199<span class="suffix">.999</span></h1>
+                </div>
+                <h5>Per Month</h5>
+              </div>
+              <div class="body">
+                <p>25 Analytics <span class="suffix">Campaign</span></p>
+                <p>1,300 Change <span class="suffix">Keywords</span></p>
+                <p>Social Media <span class="suffix">Reviews</span></p>
+                <p>1 Free <span class="suffix">Optimization</span></p>
+                <p>24/7 <span class="suffix">Support</span></p>
+              </div>
+              <div class="footer">
+                <a href="#" class="btn btn-pricing btn-block">Subscribe</a>
+              </div>
+            </div>
+          </div>
+
+         <div class="col-lg-4 py-3 wow zoomIn">
+            <div class="card-pricing marked">
+              <div class="header">
+                <div class="pricing-type">Mulai Dari</div>
+                <div class="price">
+                  <span class="dollar">Rp</span>
+                  <h1>199<span class="suffix">.999</span></h1>
                 </div>
                 <h5>Per Month</h5>
               </div>
@@ -162,9 +188,27 @@
           </div>
 
 
-
-          <div class="col-lg-4 py-3 wow zoomIn">
-
+        <div class="col-lg-4 py-3 wow zoomIn">
+            <div class="card-pricing marked">
+              <div class="header">
+                <div class="pricing-type">Mulai Dari</div>
+                <div class="price">
+                  <span class="dollar">Rp</span>
+                  <h1>199<span class="suffix">.999</span></h1>
+                </div>
+                <h5>Per Month</h5>
+              </div>
+              <div class="body">
+                <p>25 Analytics <span class="suffix">Campaign</span></p>
+                <p>1,300 Change <span class="suffix">Keywords</span></p>
+                <p>Social Media <span class="suffix">Reviews</span></p>
+                <p>1 Free <span class="suffix">Optimization</span></p>
+                <p>24/7 <span class="suffix">Support</span></p>
+              </div>
+              <div class="footer">
+                <a href="#" class="btn btn-pricing btn-block">Subscribe</a>
+              </div>
+            </div>
           </div>
 
       </div>
