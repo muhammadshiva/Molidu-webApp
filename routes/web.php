@@ -35,6 +35,6 @@ Route::get('/classification', function () {
     return view('classification');
 });
 
-Auth::routes();
+// Auth::routes();
 
 Route::get('/', [HomeController::class, 'index']);
